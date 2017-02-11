@@ -1,6 +1,9 @@
 # x
 performance comparation of some languages
 
+# what are they doing?
+simple: 1 + 2 + 3 + ... + 100,000,000
+
 # test result
 run: `./x.sh`
 
