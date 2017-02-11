@@ -16,7 +16,7 @@ time node x.js
 echo
 
 echo 'Pascal:'
-fpc x.pas > /dev/null 2>&1 && time ./x && rm x.o
+fpc x.pas > /dev/null 2>&1 && time ./x && rm x x.o
 echo
 
 echo 'PHP:'
