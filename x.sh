@@ -1,6 +1,14 @@
 #!/bin/zsh
-echo 'C++:'
-g++ -O2 -Wall -o x x.cpp && time ./x && rm x
+echo 'C++(gcc):'
+g++ -O3 -Wall -o x x.cpp && time ./x && rm x
+echo
+
+echo 'C++(clang):'
+clang++ -O3 -Wall -o x x.cpp && time ./x && rm x
+echo
+
+echo 'Rust:'
+rustc x.rs -C opt-level=3 && time ./x && rm x
 echo
 
 echo 'Go:'
