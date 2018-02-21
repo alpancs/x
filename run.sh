@@ -16,7 +16,7 @@ echo compiler: `go version`
 go build x.go && time ./x && rm x
 echo
 
-echo compiler: `javac -version`
+echo compiler: `javac -version 2>&1`
 javac x.java && time java x && rm x.class
 echo
 
